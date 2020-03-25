@@ -22,24 +22,24 @@
 
 	// 一、声明函数并使用
 	function myFun() {
-		alert("我是常规使用方法")
+		alert("我是常规使用方法");
 		console.log('我是常规使用方法')
 	}
 	// 函数的调用
-	myFun()
+	myFun();
 
 	// 二、设置函数并使用
 	var myFun1 = new Function(
 		console.log('设置函数')
-	)
-    myFun1()
+	);
+    myFun1();
 
 	// 三、带有参数的函数
 	function add(num1,num2) {
-		var sum=num1+num2
+		var sum=num1+num2;
 		alert(`${num1}+${num2}=${sum}`)
 	}
-	add(1,2)
+	add(1,2);
 	add(2,3)
 
 	//	匿名函数，立即执行函数
@@ -47,13 +47,8 @@
 	(function(){
 		console.log("立即执行");
 	})();
-
-
-
-
 </script>
-
-	</head>
+</head>
 <body>
 </body>
 </html>
